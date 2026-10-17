@@ -48,6 +48,23 @@ The app finds your saves folder by itself (Documents, OneDrive or a moved Docume
 
 ---
 
+## Stuck dynasty? (Advance or other actions are gone, rows repeat in Actions)
+
+The game keeps a list of each coach's open actions, and it holds at most 2,048. The Playoff Customizer adds its own
+entries to that list every week, and the game only clears them when a new season starts. With a big playoff field
+the list can fill up before then, often around National Signing Day, but it can happen during the season too.
+When it is full, the game can't add its own actions: **Advance** or the week's actions disappear, and rows such as
+**View Playoff Picture** or **Manage Blueprint** repeat (Manage Blueprint won't confirm).
+
+- **Request list** under each save shows how full it is: **OK**, **Filling up** (fix it before Signing Day) or **Stuck**.
+- **Fix stuck playoff save** takes the playoff mod's old entries out of the list, keeps the newest Manage Blueprint
+  and puts back every game action that couldn't be listed (Advance and the like). It shows a preview first and only changes the save when you click **Apply**. The save and
+  its autosave are each checked and fixed on their own, with a backup first. Your playoff settings are kept.
+
+The fix lasts until the list fills up again, usually about once a season with a 64-team field.
+
+---
+
 ## Backups and undo
 
 Every change makes a backup first, in `Documents\CFB 27 Save Backups\Playoff Room Backups\` (not inside `saves`:
